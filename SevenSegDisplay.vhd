@@ -4,7 +4,7 @@ use ieee.numeric_std.all;
 
 entity SevenSegDisplay is
     port(
-        BCD_IN  :   IN STD_LOGIC_VECTOR(3 DOWNTO 0);   
+        BCD_IN  :   IN STD_LOGIC_VECTOR(3 DOWNTO 0);
              A  :   OUT STD_LOGIC;
              B  :   OUT STD_LOGIC;
              C  :   OUT STD_LOGIC;
