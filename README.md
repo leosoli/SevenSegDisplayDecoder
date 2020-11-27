@@ -2,7 +2,25 @@
 
 Este é o projeto final de Eletrônica Digital.
 
+<br>
+
+- [ELETRÔNICA DIGITAL - SEVEN SEGMENT DISPLAY](#eletrônica-digital---seven-segment-display)
+  - [TABELA-VERDADE](#tabela-verdade)
+  - [EXTRAÇÃO DAS EQUAÇÕES BOOLEANAS USANDO SOMA DE PRODUTOS](#extração-das-equações-booleanas-usando-soma-de-produtos)
+  - [SIMPLIFICAÇÃO USANDO MAPAS K](#simplificação-usando-mapas-k)
+    - [OUTPUT A](#output-a)
+    - [OUTPUT B](#output-b)
+    - [OUTPUT C](#output-c)
+    - [OUTPUT D](#output-d)
+    - [OUTPUT E](#output-e)
+    - [OUTPUT F](#output-f)
+    - [OUTPUT G](#output-g)
+
+<br>
+
 ---
+
+<br>
 
 ## TABELA-VERDADE
 
@@ -261,3 +279,80 @@ $$ -->
 ## SIMPLIFICAÇÃO USANDO MAPAS K
 
 <br />
+
+### OUTPUT A
+
+$$
+\begin{aligned}
+    A & = BCD\_IN[1] + BCD\_IN[2] BCD\_IN[0] + BCD\_IN[3] + \overline{BCD\_IN[2]} \ \overline{BCD\_IN[1]} \ \overline{BCD\_IN[0]} \\
+    & = BCD\_IN[1] + BCD\_IN[2] BCD\_IN[0] + BCD\_IN[3] + \overline{BCD\_IN[2]} \ \overline{BCD\_IN[0]} \\
+    & = BCD\_IN[1] + BCD\_IN[3] + \left( BCD\_IN[2] \ \bigodot \ BCD\_IN[0] \right)
+\end{aligned}
+$$
+
+<br />
+
+### OUTPUT B
+
+$$
+\begin{aligned}
+    B & = \overline{BCD\_IN[3]} \ \overline{BCD\_IN[2]} + BCD\_IN[1] BCD\_IN[0] + BCD\_IN[3] + \overline{BCD\_IN[1]} \ \overline{BCD\_IN[0]} \\
+    & = \overline{BCD\_IN[2]} + BCD\_IN[3] + \left( BCD\_IN[1] \ \bigodot \ BCD\_IN[0] \right)
+\end{aligned}
+$$
+
+<br />
+
+### OUTPUT C
+
+$$
+\begin{aligned}
+    C & = BCD\_IN[2] + BCD\_IN[0] + BCD\_IN[3] + \overline{BCD\_IN[1]} \ \overline{BCD\_IN[0]} \\
+    & = BCD\_IN[3] + BCD\_IN[2] + \overline{BCD\_IN[1]} + BCD\_IN[0] \\
+\end{aligned}
+$$
+
+<br />
+
+### OUTPUT D
+
+$$
+\begin{aligned}
+    D & = \overline{BCD\_IN[3]} \ \overline{BCD\_IN[2]} \ BCD\_IN[1] + BCD\_IN[1] \ \overline{BCD\_IN[0]} + BCD\_IN[3] \\
+    & \qquad \qquad + BCD\_IN[2] \ \overline{BCD\_IN[1]} \ BCD\_IN[0] + \overline{BCD\_IN[2]} \ \overline{BCD\_IN[1]} \ \overline{BCD\_IN[0]} \\
+    & = BCD\_IN[1] \left( \overline{BCD\_IN[3]} \ \overline{BCD\_IN[2]} + \overline{BCD\_IN[0]} \right) + BCD\_IN[3] \\
+    & \qquad \qquad + \overline{BCD\_IN[1]} \left( BCD\_IN[2] \ BCD\_IN[0] + \overline{BCD\_IN[2]} \ \overline{BCD\_IN[0]} \right) \\
+    & = BCD\_IN[1] \left( \overline{BCD\_IN[3]} \ \overline{BCD\_IN[2]} + \overline{BCD\_IN[0]} \right) + BCD\_IN[3] \\
+    & \qquad \qquad + \overline{BCD\_IN[1]} \left( BCD\_IN[2] \ \bigodot \ BCD\_IN[0] \right)
+\end{aligned}
+$$
+
+<br />
+
+### OUTPUT E
+
+$$
+\begin{aligned}
+    
+\end{aligned}
+$$
+
+<br />
+
+### OUTPUT F
+
+$$
+\begin{aligned}
+    
+\end{aligned}
+$$
+
+<br />
+
+### OUTPUT G
+
+$$
+\begin{aligned}
+    
+\end{aligned}
+$$
