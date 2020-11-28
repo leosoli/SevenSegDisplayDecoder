@@ -48,6 +48,7 @@ begin
     G <= subida_clk and not(RST) and
             ( ( BCD_IN(1) and not(BCD_IN(0)) ) or BCD_IN(3) or
                 ( BCD_IN(2) xor BCD_IN(1) ) );
+    DP <= '1';
 end architecture bool;
 
 
