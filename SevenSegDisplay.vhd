@@ -4,20 +4,15 @@ use IEEE.std_logic_1164.all;
 use IEEE.std_logic_unsigned.all;
 use IEEE.numeric_std.all;
 
+
 -- Entidade
 entity SevenSegDisplay is
-    port(
-        BCD_IN  :   IN STD_LOGIC_VECTOR(3 DOWNTO 0);
-             A  :   OUT STD_LOGIC;
-             B  :   OUT STD_LOGIC;
-             C  :   OUT STD_LOGIC;
-             D  :   OUT STD_LOGIC;
-             E  :   OUT STD_LOGIC;
-             F  :   OUT STD_LOGIC;
-             G  :   OUT STD_LOGIC;
-            DP  :   OUT STD_LOGIC;
-           CLK  :   IN STD_LOGIC;
-           RST  :   IN STD_LOGIC
+    port (
+        BCD_IN      : IN  STD_LOGIC_VECTOR(3 DOWNTO 0);
+        A, B, C, D  : OUT STD_LOGIC;
+        E, F, G, DP : OUT STD_LOGIC;
+        CLK         : IN  STD_LOGIC;
+        RST         : IN  STD_LOGIC
     );
 end entity SevenSegDisplay;
 
@@ -27,7 +22,7 @@ end entity SevenSegDisplay;
 architecture bool of SevenSegDisplay is
     signal subida_clk : STD_LOGIC;
 begin
-    subida_clk <= '1' when (rising_edge(CLK)=true) else '0';
+    subida_clk <= '1' when (rising_edge(CLK)) else '0';
     
     A <= subida_clk and not(RST) and
             ( BCD_IN(1) or BCD_IN(3) or ( BCD_IN(2) xnor BCD_IN(0) ) );
