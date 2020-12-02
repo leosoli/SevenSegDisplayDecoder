@@ -421,9 +421,19 @@ $$ -->
 
 <div align="center">
 
-| [<img src="https://github.com/leosoli/ED-SevenSegDisplay/blob/main/Imagens/simulation_behavioral.png?raw=true" alt="KingCountyInWA"/>](https://github.com/leosoli/ED-SevenSegDisplay/blob/main/Imagens/simulation_behavioral.png) |
+| [<img src="https://github.com/leosoli/ED-SevenSegDisplay/blob/main/Imagens/simulation_behavioral.png?raw=true" alt="simBehavioral"/>](https://github.com/leosoli/ED-SevenSegDisplay/blob/main/Imagens/simulation_behavioral.png) |
 |:---:|
 | Imagem do resultado da simulação da arquitetura **behavioral** |
+
+</div>
+
+<br>
+
+<div align="center">
+
+| [<img src="https://github.com/leosoli/ED-SevenSegDisplay/blob/main/Imagens/simulation_bool.png?raw=true" alt="simBool"/>](https://github.com/leosoli/ED-SevenSegDisplay/blob/main/Imagens/simulation_bool.png) |
+|:---:|
+| Imagem do resultado da simulação da arquitetura **bool** |
 
 </div>
 
