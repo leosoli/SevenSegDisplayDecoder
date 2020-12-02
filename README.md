@@ -410,3 +410,11 @@ $$ -->
 ## IMPLEMENTAÇÃO E TESTE DO CIRCUITO USANDO SIMULADOR DO TIPO ARRASTAR E SOLTAR (EX.EASY EDA) OU USANDO VHDL (EX. EDA PLAYGROUND)
 
 <br>
+
+<div align="center">
+
+| [<img src="https://github.com/leosoli/ED-SevenSegDisplay/blob/main/Imagens/simulation_behavioral.png?raw=true" alt="KingCountyInWA"/>](https://github.com/leosoli/ED-SevenSegDisplay/blob/main/Imagens/simulation_behavioral.png) |
+|:---:|
+| Imagem do resultado da simulação da arquitetura **behavioral** |
+
+</div>
