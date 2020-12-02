@@ -23,6 +23,8 @@ Este é o projeto final de Eletrônica Digital.
     - [OUTPUT F](#output-f-1)
     - [OUTPUT G](#output-g-1)
   - [IMPLEMENTAÇÃO E TESTE DO CIRCUITO USANDO SIMULADOR DO TIPO ARRASTAR E SOLTAR (EX.EASY EDA) OU USANDO VHDL (EX. EDA PLAYGROUND)](#implementação-e-teste-do-circuito-usando-simulador-do-tipo-arrastar-e-soltar-exeasy-eda-ou-usando-vhdl-ex-eda-playground)
+  - [<br>](#)
+  - [APRESENTAÇÃO DOS RESULTADOS](#apresentação-dos-resultados)
 
 <br>
 
@@ -411,6 +413,12 @@ $$ -->
 
 <br>
 
+| [<img src="https://raw.githubusercontent.com/leosoli/ED-SevenSegDisplay/b32e296337f12157a6088de670c7bbdc784668be/Imagens/SevenSegDisplay.svg"/>](https://github.com/leosoli/ED-SevenSegDisplay/blob/main/SevenSegDisplay.vhd) |
+|:---:|
+| Imagem do arquivo SevenSegDisplay.vhd |
+
+<br>
+
 <div align="center">
 
 | [<img src="https://github.com/leosoli/ED-SevenSegDisplay/blob/main/Imagens/simulation_behavioral.png?raw=true" alt="KingCountyInWA"/>](https://github.com/leosoli/ED-SevenSegDisplay/blob/main/Imagens/simulation_behavioral.png) |
@@ -418,3 +426,13 @@ $$ -->
 | Imagem do resultado da simulação da arquitetura **behavioral** |
 
 </div>
+
+
+<br>
+---
+
+<br>
+
+## APRESENTAÇÃO DOS RESULTADOS
+
+<br>
