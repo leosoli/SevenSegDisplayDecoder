@@ -9,7 +9,7 @@ use std.textio.all;
 entity SevenSegDisplay_bool_tb is
 end entity SevenSegDisplay_bool_tb;
 
--- Arquitetura do testbench - behavioral
+-- Arquitetura do testbench - boolean
 architecture test_boolean of SevenSegDisplay_bool_tb is
     component SevenSegDisplay
         port(
