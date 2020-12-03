@@ -4,7 +4,6 @@ use IEEE.std_logic_1164.all;
 use IEEE.std_logic_unsigned.all;
 use IEEE.numeric_std.all;
 
-
 -- Entidade
 entity SevenSegDisplay is
     port (
@@ -16,11 +15,8 @@ entity SevenSegDisplay is
     );
 end entity SevenSegDisplay;
 
-
-
 -- Arquitetura 'bool'
 architecture bool of SevenSegDisplay is
-    
     component DFlipFlop
         port(
             clk : in  std_logic;
@@ -75,12 +71,8 @@ begin
     
 end architecture bool;
 
-
-
-
 -- Arquitetura 'behavioral'
 architecture behavioral of SevenSegDisplay is
-    
 begin
     main : process(CLK, RST) is
     begin
@@ -124,6 +116,4 @@ begin
             end case;
         end if;
     end process main;
-        
 end architecture behavioral;
-
