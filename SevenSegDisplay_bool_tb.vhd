@@ -77,6 +77,7 @@ begin
             time'image(now) & " com input = 0";
         end if;
         
+        wait for 2*T;
       
         -- input 1
         wait until falling_edge(clock);
@@ -93,6 +94,7 @@ begin
             time'image(now) & " com input = 1";
         end if;
         
+        wait for 2*T;
         
         -- input 2
         wait until falling_edge(clock);
@@ -109,6 +111,7 @@ begin
             time'image(now) & " com input = 2";
         end if;
         
+        wait for 2*T;
         
         -- input 3
         wait until falling_edge(clock);
@@ -125,6 +128,7 @@ begin
             time'image(now) & " com input = 3";
         end if;
         
+        wait for 2*T;
         
         -- input 4
         wait until falling_edge(clock);
@@ -141,6 +145,7 @@ begin
             time'image(now) & " com input = 4";
         end if;
         
+        wait for 2*T;
         
         -- input 5
         wait until falling_edge(clock);
@@ -157,6 +162,7 @@ begin
             time'image(now) & " com input = 5";
         end if;
         
+        wait for 2*T;
         
         -- input 6
         wait until falling_edge(clock);
@@ -173,6 +179,7 @@ begin
             time'image(now) & " com input = 6";
         end if;
         
+        wait for 2*T;
         
         -- input 7
         wait until falling_edge(clock);
@@ -189,6 +196,7 @@ begin
             time'image(now) & " com input = 7";
         end if;
         
+        wait for 2*T;
         
         -- input 8
         wait until falling_edge(clock);
@@ -205,6 +213,7 @@ begin
             time'image(now) & " com input = 8";
         end if;
         
+        wait for 2*T;
         
         -- input 9
         wait until falling_edge(clock);
@@ -226,7 +235,7 @@ begin
     
     finish : process
     begin
-        wait for 250 ns;
+        wait for 650 ns;
         assert false Report "Simulação encerrada." severity failure;
     end process finish;
 
