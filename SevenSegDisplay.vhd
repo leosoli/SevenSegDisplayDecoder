@@ -85,8 +85,8 @@ begin
     main : process(CLK, RST) is
     begin
         if (RST = '1') then
-            A  <= '1'; B  <= '1'; C  <= '1'; D  <= '1';
-            E  <= '1'; F  <= '1'; G  <= '0'; DP <= '1';
+            A  <= '0'; B  <= '0'; C  <= '0'; D  <= '0';
+            E  <= '0'; F  <= '0'; G  <= '0'; DP <= '0';
         elsif rising_edge(CLK) then
             case(BCD_IN) is 
                 when "0000" =>  -- 0
