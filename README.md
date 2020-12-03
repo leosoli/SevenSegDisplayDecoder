@@ -448,3 +448,21 @@ $$ -->
 ## APRESENTAÇÃO DOS RESULTADOS
 
 <br>
+
+<div align="center">
+
+| [<img src="https://raw.githubusercontent.com/leosoli/ED-SevenSegDisplay/main/Imagens/arch_behavioral.svg" alt="behav_imagem"/>](https://raw.githubusercontent.com/leosoli/ED-SevenSegDisplay/main/Imagens/arch_behavioral.svg) |
+|:---:|
+| Imagem do circuito lógico da arquitetura **behavioral** |
+
+</div>
+
+<br>
+
+<div align="center">
+
+| [<img src="https://raw.githubusercontent.com/leosoli/ED-SevenSegDisplay/main/Imagens/arch_bool.svg" alt="bool_imagem"/>](https://raw.githubusercontent.com/leosoli/ED-SevenSegDisplay/main/Imagens/arch_bool.svg) |
+|:---:|
+| Imagem do circuito lógico da arquitetura **bool** |
+
+</div>
