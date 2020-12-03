@@ -412,7 +412,7 @@ $$ -->
 
 <br>
 
-| [<img src="https://github.com/leosoli/ED-SevenSegDisplay/blob/main/Imagens/SevenSegDisplay.png?raw=true"/>](https://github.com/leosoli/ED-SevenSegDisplay/blob/main/SevenSegDisplay.vhd) |
+| [<img src="https://github.com/leosoli/ED-SevenSegDisplay/blob/main/Imagens/SevenSegDisplay.svg?raw=true"/>](https://github.com/leosoli/ED-SevenSegDisplay/blob/main/SevenSegDisplay.vhd) |
 |:---:|
 | Imagem do arquivo SevenSegDisplay.vhd |
 
