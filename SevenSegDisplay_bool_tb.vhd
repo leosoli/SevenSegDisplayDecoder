@@ -9,33 +9,33 @@ use std.textio.all;
 entity SevenSegDisplay_bool_tb is
 end entity SevenSegDisplay_bool_tb;
 
--- Arquitetura do testbench - boolean
+-- Arquitetura do testbench 'boolean'
 architecture test_boolean of SevenSegDisplay_bool_tb is
     component SevenSegDisplay
         port(
-            BCD_IN      : IN  STD_LOGIC_VECTOR(3 DOWNTO 0);
-            A, B, C, D  : OUT STD_LOGIC;
-            E, F, G, DP : OUT STD_LOGIC;
-            CLK         : IN  STD_LOGIC;
-            RST         : IN  STD_LOGIC
+            BCD_IN      : IN  STD_LOGIC_VECTOR(3 DOWNTO 0); -- entrada BCD
+            A, B, C, D  : OUT STD_LOGIC;  -- saídas A, B, C, D
+            E, F, G, DP : OUT STD_LOGIC; -- saídas E, F, G, DP
+            CLK         : IN  STD_LOGIC; -- entrada de clock
+            RST         : IN  STD_LOGIC  -- entrada de reset
         );
     end component SevenSegDisplay;
 
-    constant T   : time      := 20 ns;  -- clock period 
-    signal clock : std_logic := '0';    -- clock generator 
-    signal reset : std_logic := '0';    -- reset generator
+    constant T   : time      := 20 ns;  -- período do clock
+    signal clock : std_logic := '0';    -- gerador de clock
+    signal reset : std_logic := '0';    -- gerador de reset
 
-    signal data_in_tb  : std_logic_vector(3 downto 0) := "0000";
-    signal A_tb, B_tb  : std_logic;
-    signal C_tb, D_tb  : std_logic;
-    signal E_tb, F_tb  : std_logic;
-    signal G_tb, DP_tb : std_logic;
+    signal data_in_tb  : std_logic_vector(3 downto 0) := "0000"; -- entrada testbench
+    signal A_tb, B_tb  : std_logic; -- saídas do testbench
+    signal C_tb, D_tb  : std_logic; -- saídas do testbench
+    signal E_tb, F_tb  : std_logic; -- saídas do testbench
+    signal G_tb, DP_tb : std_logic; -- saídas do testbench
 
-    signal check : std_logic_vector(7 downto 0) := "00000000"; -- compare to outputs
+    signal check : std_logic_vector(7 downto 0) := "00000000"; -- compararador das saídas
 begin
 
     -- Mapeamento do componente
-    SSD : entity work.SevenSegDisplay(bool)
+    SSD : entity work.SevenSegDisplay(bool) -- instanciação da arquitetura 'bool'
         port map(
             BCD_IN => data_in_tb,
             A      => A_tb, B => B_tb,
@@ -49,19 +49,19 @@ begin
     clk_gen : process
     begin
         clock <= '0';
-        wait for T / 2;                 --  10 nsec of 0
+        wait for T / 2;                 --  10 ns de nível 0, para T=20ns
         clock <= '1';
-        wait for T / 2;                 --  10 nsec of 1, for 20 nsec period
+        wait for T / 2;                 --  10 ns de nível 1, para T=20ns
     end process clk_gen;
 
-    reset <= '1', '0' after T / 2;      --  10 nsec
-
+    reset <= '1', '0' after T / 2;      --  '0' depois de 10 ns para T=20ns
+    
+    -- Simulação
     test_proc : process
-        --variable line_o          : line;
         variable out_concatenate : std_logic_vector(7 downto 0);
     begin
-        wait until falling_edge(reset); --  wait for reset
-        wait until falling_edge(clock); --  wait for a clock
+        wait until falling_edge(reset);
+        wait until falling_edge(clock);
         
         -- input 0
         check <= "11111101";
@@ -233,6 +233,7 @@ begin
                 
     end process test_proc;
     
+    -- Encerramento da simulação
     finish : process
     begin
         wait for 650 ns;
