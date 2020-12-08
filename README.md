@@ -1,10 +1,10 @@
-# ELETRÔNICA DIGITAL - SEVEN SEGMENT DISPLAY
+# SEVEN-SEGMENT DISPLAY DECODER
 
-Este é o projeto final de Eletrônica Digital.
+Projeto de um decodificador para display de 7 segmentos.
 
 <br>
 
-- [ELETRÔNICA DIGITAL - SEVEN SEGMENT DISPLAY](#eletrônica-digital---seven-segment-display)
+- [SEVEN-SEGMENT DISPLAY DECODER](#seven-segment-display-decoder)
   - [TABELA-VERDADE](#tabela-verdade)
   - [EXTRAÇÃO DAS EQUAÇÕES BOOLEANAS USANDO SOMA DE PRODUTOS](#extração-das-equações-booleanas-usando-soma-de-produtos)
     - [OUTPUT A](#output-a)
