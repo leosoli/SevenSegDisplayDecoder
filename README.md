@@ -1,5 +1,7 @@
 # SEVEN-SEGMENT DISPLAY DECODER
 
+> README em construção
+
 Projeto de um decodificador para display de 7 segmentos.
 
 <br>
